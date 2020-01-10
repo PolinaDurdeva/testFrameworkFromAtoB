@@ -61,7 +61,7 @@ public class BaseTest {
     @AfterMethod
     public byte[] recordFailed(ITestResult result){
         if (ITestResult.FAILURE == result.getStatus()) {
-            var camera = (TakesScreenshot) webDriver;
+            TakesScreenshot camera = (TakesScreenshot) webDriver;
             return camera.getScreenshotAs(OutputType.BYTES);
         }
         return null;

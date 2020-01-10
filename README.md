@@ -4,7 +4,7 @@ It is a sample project which contains automated Java tests for fromAtoB web-plat
 The project includes UI automated tests.
 
 ## Tools and Dependencies
-* Java 1.10+
+* Java 1.8+
 * Maven
 * Selenium
 * Chrome / Chrome WD
@@ -23,14 +23,14 @@ Dependencies:
 
 From projects root execute:
 ```{bash}
-    mvn test
+    mvn clean test
 ```
 
 ### What to check
 After tests finish please do either of the following to see the test report
 
 ```{bash}
-    allure serve target/allure-results/
+    mvn allure:serve
 ```
 
 
@@ -63,7 +63,7 @@ Required:
 
 ```{bash}
     docker-compose up -d
-    mvn test
+    mvn clean test
 ```
 
 ##Run test in parallel
