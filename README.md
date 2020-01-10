@@ -27,6 +27,7 @@ From projects root execute:
 ```
 
 ### What to check
+
 After tests finish please do either of the following to see the test report
 
 ```{bash}
@@ -35,7 +36,7 @@ After tests finish please do either of the following to see the test report
 
 
 
-##Configuration
+## Configuration
 
 Test resources contains following file configurations:
 
@@ -52,7 +53,7 @@ Current version has 4 parameters to configure test:
 * browser = {chrome, ...}
 
 
-##Run test with Selenium Grid
+## Run test with Selenium Grid
 
 No webDrivers are required to be installed locally.
 
@@ -66,7 +67,7 @@ Required:
     mvn clean test
 ```
 
-##Run test in parallel
+## Run test in parallel
 
 TestNG has parameter to run test in parallel.
 Current version of framework should allow to 
@@ -76,7 +77,7 @@ parallel="classes" thread-count="2".
 I've tried to do this but it failed.
 I need more time to investigate what the problem is.
 
-#Test cases
+## Test cases
 
 ```{gherkin}
 SCENARIO: User tries to login with wrong credentials
