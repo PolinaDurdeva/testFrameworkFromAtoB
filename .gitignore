@@ -3,5 +3,5 @@
 *.DS_Store
 *.iml
 *.iws
-log/
+logs/
 target/
