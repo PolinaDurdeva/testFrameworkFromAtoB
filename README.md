@@ -18,6 +18,7 @@ The project includes UI automated tests.
 Dependencies:
 * browser: chrome
 * webdriver: chrome 
+    * include the ChromeDriver location in your PATH environment variable
 * maven
 * allure (if you would like to see beautiful report)
 
